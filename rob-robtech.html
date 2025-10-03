@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROB-ROBTECH - Robot Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        
+        .project-name {
+            font-size: 3em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2em;
+            color: #e0e0e0;
+        }
+        
+        .robots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .robot-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .robot-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .robot-name {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .robot-price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #764ba2;
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        .robot-description {
+            color: #666;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .price-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 10px 0;
+        }
+        
+        .yuan-price, .dollar-price {
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 20px;
+            background: #f0f0f0;
+        }
+        
+        .yuan-price {
+            color: #d63031;
+        }
+        
+        .dollar-price {
+            color: #0984e3;
+        }
+        
+        @media (max-width: 768px) {
+            .project-name {
+                font-size: 2em;
+            }
+            
+            .robots-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="project-name">ROB-ROBTECH</h1>
+            <p class="tagline">Advanced Robotics Solutions for Modern Needs</p>
+        </div>
+        
+        <div class="robots-grid">
+            <!-- BEAUTY-ROB -->
+            <div class="robot-card">
+                <h2 class="robot-name">BEAUTY-ROB</h2>
+                <div class="price-container">
+                    <div class="yuan-price">¥899,999</div>
+                    <div class="dollar-price">$999,999</div>
+                </div>
+                <p class="robot-description">Advanced beautician robot for skincare, makeup, and beauty treatments with precision technology.</p>
+            </div>
+            
+            <!-- COOKING-ROB -->
+            <div class="robot-card">
+                <h2 class="robot-name">COOKING-ROB</h2>
+                <div class="price-container">
+                    <div class="yuan-price">¥799,999</div>
+                    <div class="dollar-price">$999,999</div>
+                </div>
+                <p class="robot-description">Smart cooking assistant that prepares meals, follows recipes, and helps with kitchen tasks.</p>
+            </div>
+            
+            <!-- PET-ROB -->
+            <div class="robot-card">
+                <h2 class="robot-name">PET-ROB</h2>
+                <div class="price-container">
+                    <div class="yuan-price">¥699,999</div>
+                    <div class="dollar-price">$699,999</div>
+                </div>
+                <p class="robot-description">Interactive pet companion with emotional intelligence and natural language understanding.</p>
+            </div>
+            
+            <!-- DELIVERY-ROB -->
+            <div class="robot-card">
+                <h2 class="robot-name">DELIVERY-ROB</h2>
+                <div class="price-container">
+                    <div class="yuan-price">¥699,999</div>
+                    <div class="dollar-price">$699,999</div>
+                </div>
+                <p class="robot-description">Efficient delivery robot for offices, restaurants, and shops with secure product transport.</p>
+            </div>
+            
+            <!-- COMMUNICATION-ROB -->
+            <div class="robot-card">
+                <h2 class="robot-name">COMMUNICATION-ROB</h2>
+                <div class="price-container">
+                    <div class="yuan-price">¥899,999</div>
+                    <div class="dollar-price">$699,999</div>
+                </div>
+                <p class="robot-description">Multi-language communication assistant for seamless interaction and translation services.</p>
+            </div>
+            
+            <!-- OFFICEWORK-ROB -->
+            <div class="robot-card">
+                <h2 class="robot-name">OFFICEWORK-ROB</h2>
+                <div class="price-container">
+                    <div class="yuan-price">¥699,999</div>
+                    <div class="dollar-price">$699,999</div>
+                </div>
+                <p class="robot-description">Office assistant robot for daily tasks, document management, and work support.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
